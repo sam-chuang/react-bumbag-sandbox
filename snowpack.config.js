@@ -6,7 +6,7 @@ const httpProxy = require("http-proxy")
 module.exports = {
   mount: {
     public: "/",
-    src: "/dist"
+    src: "/static"
   },
   plugins: [
     "@snowpack/plugin-babel",
