@@ -9,7 +9,8 @@
     "postversion": "git push",
     "tag:docker:dev": "cross-env-shell GIT_COMMIT_HASH=$(git show --no-patch --format=%h) \"npm-run-all build:docker:dev push:docker:dev\"",
     "build:docker:dev": "cross-var docker build . -t bumbag-sandbox:$npm_package_version-$GIT_COMMIT_HASH",
-    "push:docker:dev": "docker push bumbag-sandbox:$npm_package_version-$GIT_COMMIT_HASH"
+    "push:docker:dev": "docker push bumbag-sandbox:$npm_package_version-$GIT_COMMIT_HASH",
+    "prepare": "husky install"
   },
   "hooks": {
     "pre-commit": "npm-run-all build \"git add -A docs\""
