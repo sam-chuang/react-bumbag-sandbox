@@ -4,11 +4,12 @@ import ReactDOM from "react-dom"
 // import { SWRConfig } from "swr"
 import { Global, css } from "@emotion/react"
 import { Provider as BumbagProvider, Button } from "bumbag"
+import App from "./App"
 
 ReactDOM.render(
   <React.StrictMode>
     <BumbagProvider>
-      <Button>Test</Button>
+      <App />
     </BumbagProvider>
   </React.StrictMode>,
   document.getElementById("root")
