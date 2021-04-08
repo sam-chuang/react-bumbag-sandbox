@@ -6,12 +6,13 @@
     "test": "web-test-runner \"src/**/*.test.jsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\"",
+    "postversion": "git push",
     "tag:docker:dev": "cross-env-shell GIT_COMMIT_HASH=$(git show --no-patch --format=%h) \"npm-run-all build:docker:dev push:docker:dev\"",
-    "build:docker:dev": "cross-var docker build . -t registry.gitlab.com/rayprosoft/turnkey-gaming-system/mocksite:$npm_package_version-$GIT_COMMIT_HASH",
-    "push:docker:dev": "docker push registry.gitlab.com/rayprosoft/turnkey-gaming-system/mocksite:$npm_package_version-$GIT_COMMIT_HASH"
+    "build:docker:dev": "cross-var docker build . -t bumbag-sandbox:$npm_package_version-$GIT_COMMIT_HASH",
+    "push:docker:dev": "docker push bumbag-sandbox:$npm_package_version-$GIT_COMMIT_HASH"
   },
   "hooks": {
-    "pre-push": "npm run build"
+    "pre-commit": "npm-run-all build \"git add -A docs\""
   },
   "dependencies": {
     "react": "^16.13.1",
