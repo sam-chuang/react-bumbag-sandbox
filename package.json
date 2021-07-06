@@ -20,10 +20,10 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.13.12",
-    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
     "@emotion/babel-preset-css-prop": "^11.2.0",
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@snowpack/plugin-babel": "^2.1.7",
     "@snowpack/plugin-dotenv": "^2.1.0",
@@ -31,17 +31,17 @@
     "@snowpack/web-test-runner-plugin": "^0.2.2",
     "@testing-library/react": "^11.2.6",
     "@web/test-runner": "^0.12.18",
-    "bumbag": "^1.11.6",
+    "bumbag": "^2.1.1",
     "chai": "^4.3.4",
     "cross-env": "^7.0.3",
     "cross-var": "^1.1.0",
     "http-proxy": "^1.18.1",
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1",
-    "react-hook-form": "^7.0.4",
+    "prettier": "^2.3.2",
+    "react-hook-form": "^7.10.1",
     "react-router-dom": "^5.2.0",
-    "snowpack": "3.0.13",
-    "swr": "^0.5.5"
+    "snowpack": "3.7.1",
+    "swr": "^0.5.6"
   }
 }
